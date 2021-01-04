@@ -1,0 +1,176 @@
+[{
+    "id": 1,
+    "className": "4B",
+    "seatPosCol": 1,
+    "seatPosRow": 1,
+    "isAtRisk": 1
+},
+{
+    "id": 2,
+    "className": "4B",
+    "seatPosCol": 2,
+    "seatPosRow": 1,
+    "isAtRisk": 1
+},
+{
+    "id": 3,
+    "className": "4B",
+    "seatPosCol": 3,
+    "seatPosRow": 1,
+    "isAtRisk": 1
+},
+{
+    "id": 4,
+    "className": "4B",
+    "seatPosCol": 4,
+    "seatPosRow": 1,
+    "isAtRisk": 1
+},
+{
+    "id": 5,
+    "className": "4B",
+    "seatPosCol": 5,
+    "seatPosRow": 1,
+    "isAtRisk": 1
+},
+{
+    "id": 6,
+    "className": "4B",
+    "seatPosCol": 1,
+    "seatPosRow": 2,
+    "isAtRisk": 1
+},
+{
+    "id": 7,
+    "className": "4B",
+    "seatPosCol": 2,
+    "seatPosRow": 2,
+    "isAtRisk": 1
+},
+{
+    "id": 8,
+    "className": "4B",
+    "seatPosCol": 3,
+    "seatPosRow": 2,
+    "isAtRisk": 1
+},
+{
+    "id": 9,
+    "className": "4B",
+    "seatPosCol": 4,
+    "seatPosRow": 2,
+    "isAtRisk": 1
+},
+{
+    "id": 10,
+    "className": "4B",
+    "seatPosCol": 5,
+    "seatPosRow": 2,
+    "isAtRisk": 1
+},
+{
+    "id": 11,
+    "className": "4B",
+    "seatPosCol": 1,
+    "seatPosRow": 3,
+    "isAtRisk": 1
+},
+{
+    "id": 12,
+    "className": "4B",
+    "seatPosCol": 2,
+    "seatPosRow": 3,
+    "isAtRisk": 1
+},
+{
+    "id": 13,
+    "className": "4B",
+    "seatPosCol": 3,
+    "seatPosRow": 3,
+    "isAtRisk": 1
+},
+{
+    "id": 14,
+    "className": "4B",
+    "seatPosCol": 4,
+    "seatPosRow": 3,
+    "isAtRisk": 1
+},
+{
+    "id": 15,
+    "className": "4B",
+    "seatPosCol": 5,
+    "seatPosRow": 3,
+    "isAtRisk": 1
+},
+{
+    "id": 16,
+    "className": "4B",
+    "seatPosCol": 1,
+    "seatPosRow": 4,
+    "isAtRisk": 1
+},
+{
+    "id": 17,
+    "className": "4B",
+    "seatPosCol": 2,
+    "seatPosRow": 4,
+    "isAtRisk": 1
+},
+{
+    "id": 18,
+    "className": "4B",
+    "seatPosCol": 3,
+    "seatPosRow": 4,
+    "isAtRisk": 1
+},
+{
+    "id": 19,
+    "className": "4B",
+    "seatPosCol": 4,
+    "seatPosRow": 4,
+    "isAtRisk": 1
+},
+{
+    "id": 20,
+    "className": "4B",
+    "seatPosCol": 5,
+    "seatPosRow": 4,
+    "isAtRisk": 1
+},
+{
+    "id": 21,
+    "className": "4B",
+    "seatPosCol": 1,
+    "seatPosRow": 5,
+    "isAtRisk": 1
+},
+{
+    "id": 22,
+    "className": "4B",
+    "seatPosCol": 2,
+    "seatPosRow": 5,
+    "isAtRisk": 1
+},
+{
+    "id": 23,
+    "className": "4B",
+    "seatPosCol": 3,
+    "seatPosRow": 5,
+    "isAtRisk": 1
+},
+{
+    "id": 24,
+    "className": "4B",
+    "seatPosCol": 4,
+    "seatPosRow": 5,
+    "isAtRisk": 1
+},
+{
+    "id": 25,
+    "className": "4B",
+    "seatPosCol": 5,
+    "seatPosRow": 5,
+    "isAtRisk": 1
+}
+]

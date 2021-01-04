@@ -1,0 +1,25 @@
+[{
+    "id": 1,
+    "className": "4B",
+    "classColumns": 5,
+    "classRows": 5
+},
+{
+    "id": 2,
+    "className": "4C",
+    "classColumns": 5,
+    "classRows": 1
+},
+{
+    "id": 3,
+    "className": "6B",
+    "classColumns": 1,
+    "classRows": 5
+},
+{
+    "id": 4,
+    "className": "6C",
+    "classColumns": 3,
+    "classRows": 2
+}
+]
