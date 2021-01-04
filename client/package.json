@@ -1,0 +1,12 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "live-server --port=4200"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "live-server": "^1.2.1",
+    "vue-material": "^1.0.0-beta-14"
+  }
+}

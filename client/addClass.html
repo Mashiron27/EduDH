@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/vue-material.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-material.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <script type="text/javascript" src="src/class-service.js"></script>
+
+    <!-- Tab Info -->
+    <link rel="icon" href="/favicon.ico">
+    <title>Add Classroom</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- Navigation Bar -->
+        
+        <!-- ------------- -->
+
+        <!-- Add Class Page -->
+
+        <div id="page" style="position:relative;">
+
+            <div class="bg-home">
+                <img src="src/images/page2.png" class="cover-image">
+            </div>
+            
+            <div class="page-actions">
+                <a :href="'addClass.html'">
+                    <img src="src/images/clasaNouaButton.png" id="new-class">
+                </a>
+                </a>
+            </div>
+
+        </div>
+        <!-- --------- -->
+    <div id="update">
+        <div id="details">
+
+            <div class="title"> Add a New Classroom: </div>
+
+            <label>Seat Name:</label>
+            <input type="text" v-model="classs.name"><br><br>
+
+            <label>Seat Power:</label>
+            <input type="text" v-model="classs.power"><br><br>
+
+            <br><br><br>
+            <button class="upDt" href="index.html" @click="addClass()">Add</button>
+            <br><br><br> <br><br><br>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="src/addTheClass.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/vue-material.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-material.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <script type="text/javascript" src="src/class-service.js"></script>
+    <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+    </script>
+
+    <!-- Tab Info -->
+    <link rel="icon" href="/favicon.ico">
+    <title>Classroom</title>
+</head>
+
+<body>
+
+    <div id="details">
+
+        <!-- Navigation Bar -->
+        
+        <!-- ------------- -->
+
+        <!-- Select Attendance Page -->
+
+        <div id="selectAttendancePage" style="position:relative;">
+
+            <div class="bg-home">
+                <img src="src/images/page4.png" class="cover-image">
+            </div>
+            
+            <!-- Seats -->
+            <div class="display-seats">
+                <div class="row">
+                    <div class="column">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="ctoggleImage();">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat" onclick="toggleImage();">
+                      </div>
+                  </div>
+            </div>
+            
+
+            <div class="page-actions">
+                <a href="#" onclick=
+                                "return show('riskPage','selectAttendancePage');
+                                this.style.visibility='hidden';">
+                    <img src="src/images/confirma.png" id="confirma">
+                </a>
+                <!-- TODO: return button 
+                <a href="#" onclick="return show('homepage','addClassPage');">
+                    <img src="clasaNouaButton.png" id="new-class">
+                </a> -->
+            </div>
+
+        </div>
+        <!-- --------- -->
+
+        <!-- Risk of Abandonment Page -->
+
+        <div id="riskPage" style="position:relative;display:none;">
+
+            <div class="bg-home">
+                <img src="src/images/page5.png" class="cover-image">
+            </div>
+            
+            <!-- Seats -->
+            <div class="display-seats">
+                <div class="row">
+                    <div class="column">
+                      <img src="src/images/leftSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/rightSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/rightSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/rightSelection.png" id="imageOfTheSeat">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/leftSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                        <img src="src/images/rightSelection.png" id="imageOfTheSeat">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/leftSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/leftSelection.png" id="imageOfTheSeat">
+                    </div>
+                    <div class="column">
+                        <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/rightSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/leftSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      <img src="src/images/noSelection.png" id="imageOfTheSeat">
+                      </div>
+                  </div>
+            </div>
+
+            <div class="page-actions">
+                <a href="#" onclick="">
+                    <img src="src/images/confirma.png" id="confirma">
+                </a>
+                <!-- TODO: return button 
+                <a href="#" onclick="return show('homepage','addClassPage');">
+                    <img src="clasaNouaButton.png" id="new-class">
+                </a> -->
+            </div>
+
+        </div>
+        <!-- --------- -->
+
+    </div>
+    <!-- ------------- -->
+
+    <!-- Scripts -->
+    <script language="javascript">
+        function toggleImage() {
+           var img1 = "src/images/noSelection.png";
+           var img2 = "src/images/rightSelection.png";
+           
+           var imgElement = document.getElementById('imageOfTheSeat');
+        
+           imgElement.src = (imgElement.src === img1)? img2 : img1;
+        }
+    </script>
+    <script src="src/details.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

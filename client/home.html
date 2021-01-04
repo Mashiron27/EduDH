@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta -->
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/vue-material.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="libs/vue.js"></script>
+    <script type="text/javascript" src="libs/vue-material.js"></script>
+    <script type="text/javascript" src="libs/axios.js"></script>
+    <script type="text/javascript" src="src/class-service.js"></script>
+    <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+          return false;
+        }
+    </script>
+
+    <!-- Tab Info -->
+    <link rel="icon" href="/favicon.ico">
+    <title>Classroom</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- Navigation Bar -->
+        
+        <!-- ------------- -->
+
+
+        <!-- HomePage -->
+
+        <div id="homepage" style="position:relative;">
+
+            <div class="bg-home">
+                <img src="src/images/page1.jpg" class="cover-image">
+            </div>
+            
+            <div class="page-actions">
+                <!-- Add New Classroom -->
+                <a href="#" onclick=
+                                "return show('addClassSizePage','homepage');
+                                this.style.visibility='hidden';">
+                    <img src="src/images/clasaNouaButton.png" id="new-class">
+                </a>
+                <!-- Select Existing Classroom -->
+                <img src="src/images/ExistentaButton.png"
+                    onclick=
+                        "this.style.visibility='hidden';
+                        document.getElementById('existent-class-open').style.visibility='visible';
+                        document.getElementById('drop1').style.visibility='visible';
+                        document.getElementById('drop2').style.visibility='visible';
+                        document.getElementById('drop3').style.visibility='visible';" 
+                    id="existent-class">
+                <!-- Existing Class Dropdown -->
+                <div class="dropdown">
+                    <!-- Dropdown Items -->
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="details.html">
+                            <img src="src/images/drop1.png" 
+                                id="drop3">
+                        </a>
+                        <a class="dropdown-item" href="details.html">
+                            <img src="src/images/drop1.png" 
+                                id="drop2">
+                        </a>
+                        <a class="dropdown-item" href="details.html">
+                            <img src="src/images/drop1.png" 
+                                id="drop1">
+                        </a>
+                    </div>
+                    <img src="src/images/ExistentaOpen.png"
+                        onclick=
+                            "this.style.visibility='hidden';
+                            document.getElementById('drop1').style.visibility='hidden';
+                            document.getElementById('drop2').style.visibility='hidden';
+                            document.getElementById('drop3').style.visibility='hidden';
+                            document.getElementById('existent-class').style.visibility='visible';"
+                        id="existent-class-open">
+                </div>
+            </div>
+
+        </div>
+        <!-- --------- -->
+
+        <!-- Add Class Size Page -->
+
+        <div id="addClassSizePage" style="position:relative;display:none;">
+
+            <div class="bg-home">
+                <img src="src/images/page2.png" class="cover-image">
+            </div>
+            
+            <div class="selectedInput">
+                <input type="text" id="in-columns" size="1" v-model="classs.classColumns">
+                <a> x </a>
+                <input type="text" id="in-rows" size="1" v-model="classs.classRows">
+            </div>
+            
+            <!-- Seats -->
+            <!--
+            <div class="selectedSeats" v-for="seat in seats">
+                <ul id="example-1">
+                    <li v-for="item in items" :key="item.message">
+                        <img src="selectedSeat.png" class="responsive-seat">
+                        <ul id="example-2">
+                            <li v-for="item in items" :key="item.message">
+                                <img src="selectedSeat.png" class="responsive-seat">
+                            </li>
+                          </ul>
+                    </li>
+                  </ul>
+            </div>-->
+
+
+            <div class="chosen-input">
+                <h1></h1>
+            </div>
+            <div class="page-actions">
+                <a href="#" onclick=
+                                "return show('addClassNamePage','addClassSizePage');
+                                this.style.visibility='hidden';">
+                    <img src="src/images/clasaNouaButton.png" id="new-class-b">
+                </a>
+                <!-- TODO: return button 
+                <a href="#" onclick="return show('homepage','addClassPage');">
+                    <img src="clasaNouaButton.png" id="new-class">
+                </a> -->
+            </div>
+
+        </div>
+        <!-- --------- -->
+
+        <!-- Add Class Name Page -->
+
+        <div id="addClassNamePage" style="position:relative;display:none;">
+
+            <div class="bg-home">
+                <img src="src/images/page3.png" class="cover-image">
+            </div>
+            
+            <div class="page-actions">
+                <input type="text" id="input-name" v-model="classs.className">
+                <a :href="'details.html?id='+classs.id" @onclick="addClass();">
+                    <img src="src/images/clasaNouaButton.png" id="new-class-c">
+                </a>
+                <!-- TODO: return button 
+                <a href="#" onclick="return show('homepage','addClassPage');">
+                    <img src="clasaNouaButton.png" id="new-class">
+                </a> -->
+            </div>
+
+        </div>
+        <!-- --------- -->
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="src/app.js"></script>
+    <script src="src/addTheClass.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
